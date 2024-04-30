@@ -3,7 +3,7 @@ interface User {
   age: number;
 }
 
-export function parseUserCsv(csv) {
+export function parseUserCsv(csv: string) {
   const data = csv.split("\n").map(row => row.split(","))
   const users = data.slice(1).map(row => {
     const user: User = {
