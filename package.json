@@ -1,9 +1,12 @@
 {
-  "name": "hr-user-csv-parser",
+  "name": "@hashrock/hr-user-csv-parser",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/utils.js",
+  "types": "dist/utils.d.ts",
   "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7"
   }
 }
